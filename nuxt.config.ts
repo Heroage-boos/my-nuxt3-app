@@ -27,4 +27,9 @@ export default defineNuxtConfig({
     "@/assets/style/common.scss",
     "@/assets/style/layout.scss",
   ],
+  devtools: {
+    enabled: true,//启用devtools
+    vscode: {},//VS代码服务器选项
+ 
+  }
 });

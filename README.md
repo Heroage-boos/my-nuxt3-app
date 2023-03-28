@@ -40,3 +40,6 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+devTools https://www.xnbeast.com/create-openai-chatgpt-account/
