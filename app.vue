@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="/index"/>
+  <!-- <NuxtLink to="/index" /> -->
   <div>
     <!-- <NuxtWelcome /> -->
     <NuxtLayout :name="layout">
