@@ -23,9 +23,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 51px;
-    min-width: 51px;
-    height: 28px;
+    max-width: 60px;
+    min-width: 60px;
+    height: 29px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -42,11 +42,11 @@
 
 /* Switch 3 Specific Style Start */
 .box_3 {
-    background: #19232b;
+    background: var(--button-bg);
 }
 
 .toggle_switch {
-    width: 100px;
+    width: 68px;
     height: 38px;
     position: relative;
 }
@@ -141,14 +141,14 @@ svg.checkbox .is_unchecked {
 @-webkit-keyframes resetRing {
     to {
         stroke-dashoffset: 0;
-        stroke: --button-bg;
+        stroke: var(--button-bg);
     }
 }
 
 @keyframes resetRing {
     to {
         stroke-dashoffset: 0;
-        stroke: --button-bg;
+        stroke: var(--button-bg);
     }
 }
 
