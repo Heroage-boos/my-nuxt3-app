@@ -30,6 +30,5 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,//启用devtools
     vscode: {},//VS代码服务器选项
- 
   }
 });

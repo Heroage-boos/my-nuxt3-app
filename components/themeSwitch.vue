@@ -1,6 +1,6 @@
 <template>
     <div class="switch_box box_3">
-        <div class="toggle_switch">
+        <div class="toggle_switch" v-on:click="handlerTabTheme">
             <input type="checkbox" class="switch_3">
             <svg class="checkbox" xmlns="http://www.w3.org/2000/svg" style="isolation:isolate" viewBox="0 0 168 80">
                 <path class="outer-ring"
@@ -16,7 +16,15 @@
 </template>
 
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+function handlerTabTheme() {
+    // console.log('document.documentElement.classList', document.documentElement.classList);
+    //读取当前theme状态，根据图标 修改全局样式文件
+    document.documentElement.classList[0]?document.documentElement.classList.remove('dark'):document.documentElement.classList.add('dark')
+    
+}
+</script>
 
 <style lang="scss" scoped>
 .switch_box {
