@@ -1,0 +1,17 @@
+// 定义默认主题变量
+$primary-color: #0070f3;
+$background-color: #f0f0f0;
+
+// 定义另一个主题变量
+$alternate-primary-color: #ff4081;
+$alternate-background-color: #282c34;
+
+// 定义默认主题样式
+body {
+  background-color: $background-color;
+}
+
+h1 {
+  color: $primary-color;
+}
+
