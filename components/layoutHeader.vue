@@ -1,3 +1,21 @@
+<style lang="scss">
+.down-select {
+    position: relative;
+    color: var(--main-color);
+
+    .down-icon {}
+
+    .down-chiose {
+        display: none;
+        position: absolute;
+        top: 23px;
+        border: solid 1px red;
+        color: var(--main-color);
+
+    }
+}
+</style>
+
 <template>
     <div class="app-header">
         <div class="app-header-left">
@@ -15,6 +33,20 @@
             </div>
         </div>
         <div class="app-header-right">
+
+            <div class="down-select">
+                <div class="down-icon" v-on:mouseover="mouseoverTab" v-on:mouseout="mouseoutTab"> 一个下拉选项卡
+                   
+                </div>
+                <div class="down-chiose" ref="tabChiose" v-on:mouseover="mouseoverChiose"
+                        v-on:mouseout="mouseoutChiose">
+                          <ul>
+                             <li>背景动画</li>
+                             <li></li>
+                          </ul>
+                    </div>
+            </div>
+
             <themeSwitch />
             <button class="add-btn" title="Add New Project">
                 <svg class="btn-icon feather feather-plus" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -48,10 +80,31 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup >
 
-function handleTabBackground() {
-    const nuxt = document.body;
-    nuxt.style.backgroundColor = "darkgray";
+import { ref } from "vue"
+const tabChiose = ref(null)
+
+//鼠标移上去
+function mouseoverTab() {
+    tabChiose.value.style.display = "block"
+    // tabChiose.style.display="block"
+
 }
+function mouseoutTab() {
+    let str = tabChiose.value.style.cssText
+    let regex = /block/;
+    regex.test(str) ? tabChiose.value.style.display = 'none' : ""
+    console.log(regex.test(str));
+}
+
+function mouseoverChiose() {
+    tabChiose.value.style.display = "block"
+}
+//鼠标移出去
+function mouseoutChiose() {
+    console.log("没生效！！！！！")
+    tabChiose.value.style.display = 'none'
+}
+
 </script>
