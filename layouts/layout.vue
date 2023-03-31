@@ -2,10 +2,11 @@
     <LayoutHeader />
     <div class="app-content">
         <LayoutContentLeft />
-        <div class="projects-section">
-            <slot />
-        </div>
-        <LayoutContentRigth />
+        <slot />
     </div>
-    <LayoutFooter/>
+    <LayoutFooter />
 </template>
+
+<script setup lang="ts">
+const route = useRoute();
+</script>

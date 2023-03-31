@@ -73,7 +73,7 @@ a {
     height: 100%;
     background-color: var(--app-container);
     transition: 0.2s;
-    max-width: 1800px;
+    max-width: 1502px;
 
     button,
     input,
@@ -87,7 +87,7 @@ a {
   &-content {
     display: flex;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
     padding: 16px 24px 24px 0;
   }
 
@@ -282,11 +282,11 @@ a {
 }
 
 .projects-section {
-  flex: 2;
+  flex: 3;
   background-color: var(--projects-section);
   border-radius: 32px;
   padding: 32px 32px 0 32px;
-  overflow: hidden;
+  overflow: auto;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -946,8 +946,7 @@ a {
   }
 }
 
-
-.footer{
-    width: 100%;
-    // border:solid 1px red;
+.footer {
+  width: 100%;
+  // border:solid 1px red;
 }

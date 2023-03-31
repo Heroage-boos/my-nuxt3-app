@@ -1,6 +1,6 @@
 <template>
   <!-- <NuxtLink to="/index" /> -->
-  <div>
+  <div class="app-container">
     <!-- <NuxtWelcome /> -->
     <NuxtLayout :name="layout">
       <NuxtPage />

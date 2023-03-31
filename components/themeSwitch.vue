@@ -21,8 +21,8 @@
 function handlerTabTheme() {
     // console.log('document.documentElement.classList', document.documentElement.classList);
     //读取当前theme状态，根据图标 修改全局样式文件
-    document.documentElement.classList[0]?document.documentElement.classList.remove('dark'):document.documentElement.classList.add('dark')
-    
+    document.documentElement.classList[0] ? document.documentElement.classList.remove('dark') : document.documentElement.classList.add('dark')
+
 }
 </script>
 
@@ -31,9 +31,9 @@ function handlerTabTheme() {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 60px;
-    min-width: 60px;
-    height: 29px;
+    max-width: 38px;
+    min-width: 38px;
+    height: 22px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
